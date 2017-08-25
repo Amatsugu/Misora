@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Misora"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="136.197" Width="379.93">
     <Grid>
-        
+		<Border Padding="10">
+			<StackPanel x:Name="LoginPanel">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="2*"/>
+					</Grid.ColumnDefinitions>
+					<Label Grid.Column="0">Token:</Label>
+					<TextBox Grid.Column="1" x:Name="tokenBox"></TextBox>
+				</Grid>
+				<Button Margin="0 15 0 5" x:Name="LoginButton" Click="LoginButton_Click">Login</Button>
+			</StackPanel>
+		</Border>
     </Grid>
 </Window>
